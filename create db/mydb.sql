@@ -9,10 +9,12 @@ create table clients(
 );
 
 insert into clients values 
-    ('', 'Joel Irineu', 'irineu.joel01@gmail.com'),
-    ('', 'João Gabriel', 'gabrieldesolzalima44@gmail.com'),
-    ('', 'Matheus Vasconcelos', 'matheus.vasco.roch@gmail.com');
+    (NULL, 'Joel Irineu', 'irineu.joel01@gmail.com'),
+    (NULL, 'João Gabriel', 'gabrieldesolzalima44@gmail.com'),
+    (NULL, 'Matheus Vasconcelos', 'matheus.vasco.roch@gmail.com');
 
-show tables;
+-- show tables; 
 
 select * from clients;
+
+-- drop table clients;
