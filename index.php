@@ -29,7 +29,7 @@
     $fetchClients = $sql->fetchAll();
 
     foreach($fetchClients as $key => $value){
-        echo $value['name'].' | '.$value['email'].' <a href="?delete='.$value['id'].'">excluir</a>';
+        echo $value['name'].' | '.$value['email'].' <a href="?delete='.$value['id'].'">excluir</a> | <a href="edit/?id='.$value['id'].'&name='.$value['name'].'&email='.$value['email'].'">editar</a>';
         echo '<hr>';
     }
 ?>
