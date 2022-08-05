@@ -14,3 +14,15 @@
     <input type="text" name="email" id="email">
     <input type="submit" value="enviar">
 </form>
+
+<?php
+    $sql = $pdo->prepare("SELECT * FROM clients");
+    $sql->execute();
+
+    $fetchClients = $sql->fetchAll();
+
+    foreach($fetchClients as $key => $value){
+        echo $value['name'].' | '.$value['email'];
+        echo '<hr>';
+    }
+?>
